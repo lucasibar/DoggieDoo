@@ -1,0 +1,52 @@
+.imagenPortada{
+    height: 650px;
+    border-radius: 100%;
+}
+.ciculoBlanco{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    height: 175px;
+    width: 175px;
+    border-radius: 100%;
+    box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
+}
+.ciculoMayor{
+    display: flex;
+    background-color: #ec6f6f;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+.circuloInterno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e5eb;
+    height: 155px;
+    width: 155px;
+    border-radius: 100%;
+}
+.subtitulo{
+    font-weight: 400;
+    font-style: italic;
+    margin: 0 auto 0 0;
+    color: #ec6f6f;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+.titulo{
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 9px auto 0 0;
+}
+.parrrafoLanding{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 20px 2px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    text-align: left;
+    width: 300px;
+}

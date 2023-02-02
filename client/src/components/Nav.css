@@ -1,0 +1,81 @@
+.nav{
+  /* background-color: #F4A442; */
+  display: flex;
+  text-align: center;
+  text-justify: center;
+  height: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.buttonFiltros{
+  color: #3E7C17;
+  font-weight: bolder;
+  font-size: medium;
+  background-color: #E8E1D9;
+  border-radius:10%;
+  border: solid;
+  border-width: 2px;
+  margin: 10px;
+  height: 40px;
+}
+.buttonFiltros:hover{
+  transform: scale(1.2);
+}
+.create{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-justify: center;
+  color: #3E7C17;
+  font-size: 600%;
+  border-radius:100%;
+  border: solid;
+  border-width: 2px;
+  border-color: #F4A442;
+  position: fixed;
+  right:10%;
+  bottom: 5%;
+  height: 100px;
+  width: 100px;
+}
+.create:hover{
+  transform: scale(1.2);
+}
+.imagenHomeBarra{
+
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+.imagenHomeBarra:hover{
+  transform: scale(1.2);
+}
+.searchBar{
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  right: 50px;
+}
+.inputSearch{
+  color: #F4A442;
+  font-weight: bolder;
+  font-size: medium;
+  background-color: #E8E1D9;
+  border-radius:10%;
+  border: solid;
+  border-width: 1px;
+  margin: 10px;
+  height: 40px;
+}
+.botonSearch{
+  display:inline;
+  background-color: #F4A442;
+  width: 40px;
+  height: 40px;
+}
+.botonSearch:hover{
+  transform: scale(1.2);
+}

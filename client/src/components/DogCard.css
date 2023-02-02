@@ -1,0 +1,19 @@
+.carta{
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  .carta:hover{
+    transform: scale(1.2);
+  }
+  .img{
+    width: 100%;
+    height: 200px;
+  }
+  .namelink{
+    font-size: 130%;
+    color: #3E7C17;
+    text-decoration: none;
+  }
