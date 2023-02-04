@@ -2,10 +2,10 @@ import './App.css';
 import { Route , Switch} from "react-router-dom";
 import React from 'react';
 import LandingPage from './LandingPage';
-import Dogs from './components/Dogs/Dogs';
+import Home from './components/Home';
 import Detail from './components/Detail';
 import CreateDog from './components/CreateForm/CreateDog';
-import Nav from './components/Nav'
+
 
 function App() {
   return (
@@ -17,8 +17,7 @@ function App() {
       </Route>
 
       <Route path= "/inicio">
-        <Nav/>
-        <Dogs />
+        <Home/>
       </Route>
       
       <Route 

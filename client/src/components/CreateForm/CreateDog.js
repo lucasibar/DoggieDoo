@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios"
 import validate, {initialState} from './validate.js'
 import './CreateDog.css'
-import dogLogo from '../../imagenes/dog.png';
+
 
 
 function CreateDog (props){
@@ -89,7 +89,7 @@ function CreateDog (props){
 
     return (
     <div className='form'>
-    <Link to="/inicio"><img className='imagenHome' src={dogLogo} alt="foto entrada"/></Link>  
+    <Link to="/inicio">HOME</Link>  
     <form onSubmit={handleSubmit}>
     <div>
         <label>Raza: </label>

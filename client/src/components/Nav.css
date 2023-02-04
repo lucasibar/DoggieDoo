@@ -1,40 +1,43 @@
 .nav{
-  /* background-color: #F4A442; */
   display: flex;
+  margin-top: 50px;
+  background-color: #e0e5eb;
+  width: 100%;
   text-align: center;
   text-justify: center;
   height: 50px;
-  margin-top: 50px;
   justify-content: center;
   align-items: center;
 }
 .buttonFiltros{
-  color: #3E7C17;
-  font-weight: bolder;
-  font-size: medium;
-  background-color: #E8E1D9;
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 50;
+  line-height: 1.8;
+  margin: 20px 2px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  background-color: #e0e5eb;
   border-radius:10%;
-  border: solid;
+  border: none;
+  border-color: #ffaec9;
   border-width: 2px;
   margin: 10px;
   height: 40px;
 }
 .buttonFiltros:hover{
-  transform: scale(1.2);
+  color: #ffaec9;
 }
 .create{
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  text-justify: center;
-  color: #3E7C17;
+  color: #111;
   font-size: 600%;
   border-radius:100%;
   border: solid;
   border-width: 2px;
-  border-color: #F4A442;
+  border-color: #ffaec9;
   position: fixed;
   right:10%;
   bottom: 5%;
@@ -44,38 +47,36 @@
 .create:hover{
   transform: scale(1.2);
 }
-.imagenHomeBarra{
 
-  position: relative;
-  height: 100px;
-  width: 100px;
-}
-.imagenHomeBarra:hover{
-  transform: scale(1.2);
-}
-.searchBar{
-  position:absolute;
-  height: 100px;
-  width: 100px;
-  right: 50px;
-}
 .inputSearch{
-  color: #F4A442;
-  font-weight: bolder;
-  font-size: medium;
-  background-color: #E8E1D9;
-  border-radius:10%;
+  border: 1px;
+  font-size: 1.20rem;
+  color: #111;
+  width: 150px;
+  background: #e0e5eb;
   border: solid;
-  border-width: 1px;
-  margin: 10px;
-  height: 40px;
+  border-color: #ffaec9;
+  border-width: 2px;
+  padding: 0 1.6rem;
+  border-radius: 10px 100px / 120px;
 }
 .botonSearch{
-  display:inline;
-  background-color: #F4A442;
-  width: 40px;
-  height: 40px;
+display: inline;
+background-color: #e0e5eb;
+height: 20px;
+width: 20px;
+margin-left: 15px;
+border-radius: 100%;
+border: solid;
+border-width: 2px;
+border-color: #ffaec9;
 }
-.botonSearch:hover{
-  transform: scale(1.2);
+.huella{
+  display: block;
+margin: 80px;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
 }

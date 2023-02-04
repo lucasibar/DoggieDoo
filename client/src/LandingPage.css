@@ -1,10 +1,25 @@
+.contenedorLandingPage{
+    display: block;
+}
+.contenedorTextoCirculo{
+    display:flex;
+    width: 100%;
+    align-items: space-between;
+}
+
+.contenedorTexto{
+position:relative;
+left: 400px;
+bottom: 250px;
+}
+
 .imagenPortada{
     height: 650px;
     border-radius: 100%;
 }
 .ciculoBlanco{
     display: flex;
-    position: fixed;
+    position: absolute;
     background-color: white;
     height: 175px;
     width: 175px;
@@ -13,15 +28,16 @@
 }
 .ciculoMayor{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ec6f6f;
     height: 250px;
     width: 250px;
     border-radius: 100%;
+    left: 500px;
+    bottom: 200px;
 }
 .circuloInterno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #e0e5eb;
     height: 155px;
     width: 155px;
@@ -49,4 +65,22 @@
     font-family: 'Open Sans',sans-serif;
     text-align: left;
     width: 300px;
+}
+
+.botonLanding{
+    position: absolute;
+    color: #e0e5eb;
+    background-color: #ec6f6f;
+    border: 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 20px 2px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    right: 250px;
+    width: 150px;
+    margin-top: 50px;
+}
+.botonLanding:hover{
+    background-color: #111111
 }

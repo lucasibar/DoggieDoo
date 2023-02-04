@@ -9,7 +9,7 @@ return(
 <div className='carta'>
     <NavLink className="namelink" to={`/detail/${id}`}>
     <img className="img" src={img} alt="imagen de raza"/>
-    <div >{name}</div>   
+    <div className='texto'>{name}</div>   
     </NavLink>	
 
 

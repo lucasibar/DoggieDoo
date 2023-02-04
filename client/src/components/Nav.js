@@ -1,6 +1,6 @@
 import React, {useEffect, useState}from 'react';
 import { NavLink } from "react-router-dom";
-import dogLogo from '../imagenes/dog.png';
+import huella from '../imagenes/huella.jpg';
 import { useDispatch } from 'react-redux';
 import {pesoMayMen, nombreAZ, getAllDogs, dogsApi, dogsBDD, search, clearFiltros} from '../redux/actions'
 import './Nav.css'
@@ -25,14 +25,17 @@ function Nav ({ordenadoAZ, ordenadoMayMen}){
 return (
 <div  className='nav'>
 
-    <img onClick={()=>dispatch(clearFiltros())} className='imagenHomeBarra' src={dogLogo} alt="foto entrada"/>
+    <button className='buttonFiltros' onClick={()=>dispatch(clearFiltros())}>Home</button>
     <button className='buttonFiltros' onClick={()=>dispatch(pesoMayMen())}>{ordenadoMayMen||"MENOR-MAYOR"}</button>
     <button className='buttonFiltros' onClick={()=>dispatch(nombreAZ())}>{ordenadoAZ}</button>
-    <button className='buttonFiltros' onClick={()=>dispatch(dogsApi())}>Dogs de la api</button>
-    <button className='buttonFiltros' onClick={()=>dispatch(dogsBDD())}>Dogs de la base de datos</button>
+    <img className='huella' src={huella} alt='no se cargo la huella'/>
+    <button className='buttonFiltros' onClick={()=>dispatch(dogsApi())}>DogsApi</button>
+    <button className='buttonFiltros' onClick={()=>dispatch(dogsBDD())}>DogsBdd</button>
     
-    <input className= 'inputSearch' type="text" value={busqueda} placeholder="SEARCH" onChange={handleOnChange} /> 
+    <input className= 'inputSearch' type="text" value={busqueda} placeholder="Search" onChange={handleOnChange} /> 
     <button className='botonSearch' onClick={botonBusqueda}></button> 
+
+    
     <NavLink className='create' to='/create'>+</NavLink>
 
 </div>

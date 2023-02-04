@@ -18,7 +18,7 @@ const initialState = {
   dogs: [],
   detail:{},
   dogsRender:[],
-  ordenadoMayMen: "MENOR-MAYOR",
+  ordenadoMayMen: "Ordenar por peso",
   ordenadoAZ: 'A-Z',
   paginaActual: 0,
 
@@ -43,7 +43,7 @@ case CLEAR_DETAIL_DOGS:
     detail: {}
 }
 case PESO_MAY_MEN: 
-if(!state.dogsRender.length  && state.ordenadoMayMen==="MENOR-MAYOR"){
+if(!state.dogsRender.length  && state.ordenadoMayMen==="Ordenar por peso"){
       let dogsCopy = [...state.dogs]
       .filter(e=> e.weight[0] !== "N")
       .map(e=> {
@@ -54,17 +54,17 @@ if(!state.dogsRender.length  && state.ordenadoMayMen==="MENOR-MAYOR"){
       return {
         ...state,
         dogsRender: dogsCopy,
-        ordenadoMayMen: "MAYOR-MENOR"
+        ordenadoMayMen: "Mas grandes"
       } 
-}else if(state.dogsRender.length>0 && state.ordenadoMayMen === "MAYOR-MENOR"){
+}else if(state.dogsRender.length>0 && state.ordenadoMayMen === "Mas grandes"){
       let dogsCopy = [...state.dogsRender]
       let MayMen = dogsCopy.reverse()
       return {
         ...state,
         dogsRender: MayMen,
-        ordenadoMayMen: "MENOR-MAYOR"
+        ordenadoMayMen: "Mas chicos"
   } 
-}else if(state.dogsRender.length>0 && state.ordenadoMayMen === "MENOR-MAYOR"){
+}else if(state.dogsRender.length>0 && state.ordenadoMayMen === "Mas chicos"){
       let dogsCopy = [...state.dogsRender]
       .filter(e=> e.weight[0] !== "N")
       .map(e=> {
@@ -75,7 +75,7 @@ if(!state.dogsRender.length  && state.ordenadoMayMen==="MENOR-MAYOR"){
       return {
         ...state,
         dogsRender: dogsCopy,
-        ordenadoMayMen: "MAYOR-MENOR"
+        ordenadoMayMen: "Mas grandes"
       } 
 }
 break
@@ -141,7 +141,7 @@ case CLEAR_FILTROS:
     ...state,
     dogs: action.payload,
     dogsRender: [],
-    ordenadoMayMen: "MENOR-MAYOR",
+    ordenadoMayMen: "Ordenar por peso",
     ordenadoAZ: 'A-Z',
     paginaActual: 0,
     filtroDOG: false

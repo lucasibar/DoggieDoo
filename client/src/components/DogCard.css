@@ -1,5 +1,5 @@
 .carta{
-    border-radius: 10px;
+    background-color: #e0e5eb;
     box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
     margin: 10px;
     text-align: center;
@@ -13,7 +13,16 @@
     height: 200px;
   }
   .namelink{
-    font-size: 130%;
-    color: #3E7C17;
+    color: #ffaec9;
     text-decoration: none;
+  }
+  .texto{
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffaec9;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
   }

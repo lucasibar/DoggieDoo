@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { getDetail, clearDetail } from '../redux/actions';
 import { Link } from "react-router-dom";
 import './Detail.css'
-import dogLogo from '../imagenes/dog.png';
 class Detail extends React.Component {
     componentDidMount(){ this.props.getDetail(this.props.match.params.id) }
     componentWillUnmount(){ this.props.clearDetail() } 
@@ -19,7 +18,7 @@ class Detail extends React.Component {
             <div className="detalle">
 
 
-                <Link to="/inicio"><img className='imagenHome' src={dogLogo} alt="foto entrada"/></Link> 
+                <Link to="/inicio">HOME</Link> 
                 <img className='imagenCarta' src={img} alt='No se encontro imagen'/>
                 <h1>{name}</h1>  
                 <h2>{temperament}</h2>  
