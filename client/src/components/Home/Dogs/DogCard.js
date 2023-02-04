@@ -8,7 +8,7 @@ export default function DogCard({ id, name, img, temperament}){
 return(
 <div className='carta'>
     <NavLink className="namelink" to={`/detail/${id}`}>
-    <img className="img" src={img} alt="imagen de raza"/>
+    <img className="imgCarta" src={img} alt="imagen de raza"/>
     <div className='texto'>{name}</div>   
     </NavLink>	
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getDetail, clearDetail } from '../redux/actions';
+import { getDetail, clearDetail } from '../../redux/actions';
 import { Link } from "react-router-dom";
 import './Detail.css'
 class Detail extends React.Component {

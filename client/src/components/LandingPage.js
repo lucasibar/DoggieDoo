@@ -1,5 +1,5 @@
 import React from 'react';
-import imagenPortada from './imagenes/fotoPortada.jpg';
+import imagenPortada from '../imagenes/fotoPortada.jpg';
 import { Link } from "react-router-dom";
 import './LandingPage.css';
 

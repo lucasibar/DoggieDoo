@@ -1,8 +1,8 @@
 import React, {useEffect, useState}from 'react';
 import { NavLink } from "react-router-dom";
-import huella from '../imagenes/huella.jpg';
+import huella from '../../../imagenes/huella.jpg';
 import { useDispatch } from 'react-redux';
-import {pesoMayMen, nombreAZ, getAllDogs, dogsApi, dogsBDD, search, clearFiltros} from '../redux/actions'
+import {pesoMayMen, nombreAZ, getAllDogs, dogsApi, dogsBDD, search, clearFiltros} from '../../../redux/actions'
 import './Nav.css'
 import { connect } from 'react-redux';
 

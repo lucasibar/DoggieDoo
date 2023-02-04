@@ -1,8 +1,8 @@
 import React, { useState, useEffect }from 'react';
 import { connect } from 'react-redux';
-import DogCard from '../DogCard';
+import DogCard from './DogCard';
 import { useDispatch } from 'react-redux';
-import {setPaginaActual, disminuirBoton, aumentarBoton} from '../../redux/actions'
+import {setPaginaActual, disminuirBoton, aumentarBoton} from '../../../redux/actions'
 import './Dogs.css';
 
 
