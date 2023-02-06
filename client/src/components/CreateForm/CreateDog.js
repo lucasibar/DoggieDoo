@@ -88,11 +88,11 @@ function CreateDog (props){
     }
 
     return (
-    <div className='form'>
-    <Link to="/inicio">HOME</Link>  
+<div className='form'>
+    
     <form onSubmit={handleSubmit}>
-    <div>
-        <label>Raza: </label>
+    <div className='contenedorInput'>
+        <label>Raza</label>
         <input 
         type="text" 
         placeholder= "Nombre de la raza"
@@ -102,9 +102,9 @@ function CreateDog (props){
         onBlur={handleOnBlur}/> 
         <p style={{visibility: error.name? "visible" : "hidden"}} className="danger">{error.name}</p>
     </div>
-    <hr/>
-    <div>
-        <label>Altura: </label>
+<hr/>
+    <div className='contenedorInput'>
+        <label>Altura</label>
         <input 
         type="text" 
         placeholder="Altura maxima"
@@ -125,9 +125,9 @@ function CreateDog (props){
         <p style={{visibility: error.heightMIN? "visible" : "hidden"}} className="danger" >{error.heightMIN}</p>
 
     </div>
-    <hr/>
-    <div>
-        <label>Peso estimado: </label>
+<hr/>
+    <div className='contenedorInput'>
+        <label>Peso</label>
         <input 
         type="text" 
         placeholder="Peso maxima"
@@ -147,9 +147,9 @@ function CreateDog (props){
         <p style={{visibility: error.weightMAX? "visible" : "hidden"}} className="danger" >{error.weightMAX}</p>     
         <p style={{visibility: error.weightMIN? "visible" : "hidden"}} className="danger" >{error.weightMIN}</p>     
     </div>
-    <hr/>
-    <div>
-        <label>Estimado de vida: </label>
+<hr/>
+    <div className='contenedorInput'>
+        <label>Estimado de vida</label>
         <input 
         type="text" 
         placeholder="Estimado de vida maxima"
@@ -160,10 +160,9 @@ function CreateDog (props){
 
         <p style={{visibility: error.life_span? "visible" : "hidden"}} className="danger">{error.life_spanMIN}</p>      
     </div>
-
-    <div>
-    <hr/>
-    <label>Nuevo temperamento: </label>
+<hr/>
+    <div className='contenedorInput'>
+        <label>Crear temperamento</label>
         <input 
             type="text" 
             placeholder="Nuevo temperamento"
@@ -173,24 +172,31 @@ function CreateDog (props){
             /> 
         <button onClick={botonNewTemp}>+</button>
         <hr/>
-    <label>Elegir temperamento existente: </label>
+    </div>
+    <div className='contenedorInput'>
+        <label>Temperamentos</label>
         <select onChange={handleTempSeleccion}>
         <option >Selecione opcion...</option>
             {temperamentos?.map(t=>(<option value={t} key={t}>{t}</option>))}
         </select>
-        <input type="button" value="+" onClick={AddOption} />
+        <input id='botonTemp' type="button" value="+" onClick={AddOption} />
     </div>
-    
-    
     
     {datosForm.temperamentos?.map(e=>
     <button className="tempSeleccionado" onClick={borrarTemp} value={e} key={e}>{e}</button>
      )}
-<hr/>
-    <input className='botonSubmit' type="submit" value= "Create" disabled={Object.keys(error).length === 0? false : true}/>
-    </form>
     
-    </div>
+    
+
+    <input className='botonSubmit' type="submit" value= "Create" disabled={Object.keys(error).length === 0? false : true}/>
+
+    </form>
+
+    
+    <Link to="/inicio" className='homeBoton'>Home</Link>  
+    
+    
+</div>
     
 
 

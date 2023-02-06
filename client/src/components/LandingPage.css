@@ -71,19 +71,20 @@ bottom: 250px;
 }
 
 .botonLanding{
-    position: absolute;
+    position: relative;
     color: #e0e5eb;
     background-color: #ec6f6f;
     border: 0px;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.8;
-    margin: 20px 2px 0 0;
     font-family: 'Open Sans',sans-serif;
     right: 250px;
     width: 150px;
-    margin-top: 50px;
 }
 .botonLanding:hover{
     background-color: #111111
+}
+.contenedorBotones{
+    display:inline-flex
 }

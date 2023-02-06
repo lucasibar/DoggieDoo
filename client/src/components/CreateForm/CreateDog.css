@@ -1,21 +1,27 @@
 .form{
   display: flex;
-  flex-wrap: wrap;
-  align-items: space-between;
   justify-content: center;
   width: 600px;
   height: 700px;
-  color: #3E7C17;
+  color: #ec6f6f;
   font-weight: bolder;
   font-size: medium;
-  background-color: #E8E1D9;
+  background-color: #ffe1eb;
   border-radius:10%;
   text-align: center;
-  text-justify: auto;
+  text-justify: left;
   border: solid;
   border-width: 2px;
-  margin: 10px;
 
+}
+input{
+  background-color: #ffe1eb;
+  font-size: 1rem;
+  color: #111;
+  width: 200px;
+}
+select{
+  background-color: #ffe1eb;
 }
 p.danger {
     color: red;
@@ -34,14 +40,53 @@ p.danger {
   height: 40px;
 }
 .botonSubmit{
-  color: #3E7C17;
-  font-weight: bolder;
-  font-size:large;
-  background-color: #E8E1D9;
-  border-radius:10%;
-  border: solid;
-  border-color: #F4A442;
-  border-width: 2px;
-  margin: 10px;
-  height: 40px;
+  display:block;
+  color: #e0e5eb;
+  background-color: #ec6f6f;
+  border: 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: 'Open Sans',sans-serif;
+  width: 300px;
+}
+.botonSubmit:hover{
+  background-color: #111111
+}
+.homeBoton{
+  display:block;
+  position: absolute;
+  color: #e0e5eb;
+  text-decoration: none;
+  background-color: #ec6f6f;
+  border: 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: 'Open Sans',sans-serif;
+  bottom: 250px;
+  width: 300px;
+  margin-top: 50px;
+
+}
+.homeBoton:hover{
+  background-color: #111111
+}
+
+label{
+  display: block;
+}
+
+.contenedorInput{
+  margin: 20px;
+}
+#botonTemp{
+  display:inline-flex;
+  border: none;
+  width: 21px;
+  height: 21px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: 'Open Sans',sans-serif;
 }
