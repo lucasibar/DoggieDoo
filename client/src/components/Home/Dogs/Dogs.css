@@ -3,28 +3,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    width: 1000px;
+    margin: 50px;
 
   }
   .botonesPaginas{
-    display: block;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 50%;
   }
   .contenedorDogs{
     display: flex;
     flex-wrap: wrap;
     align-items: space-between;
     justify-content: center;
-    width: 1000px;
+    width: 100%;
   }
 
-.paginaActual{
+/* .paginaActual{
   color:#F4A442;
   display: flex;
   flex-wrap: wrap;
   align-items: space-between;
   justify-content: center;
-
-    width: 20px;
-    height: 20px;
-  }
+  width: 20px;
+  height: 20px;
+  } */
