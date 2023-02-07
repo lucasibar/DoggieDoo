@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 600px;
-  height: 700px;
+  height: 800px;
   color: #ec6f6f;
   font-weight: bolder;
   font-size: medium;
@@ -23,24 +23,44 @@ input{
 select{
   background-color: #ffe1eb;
 }
+label{
+  display: block;
+}
+
 p.danger {
     color: red;
     font-size: 13px;
   }
   
 .tempSeleccionado{
-  color: #3E7C17;
+  color: #ec6f6f;
   font-weight: bolder;
   font-size: medium;
-  background-color: #E8E1D9;
+  background-color: #ffe1eb;
   border-radius:10%;
   border: solid;
+  border-color: #ec6f6f;
   border-width: 2px;
-  margin: 10px;
   height: 40px;
 }
+.tempSeleccionado:hover{
+  color: #ed707046;
+  font-weight: bolder;
+  font-size: medium;
+  background-color: #ffe1eb;
+  border-radius:10%;
+  border: solid;
+  border-color: #ed707046;
+  border-width: 2px;
+  height: 40px;
+}
+
+
 .botonSubmit{
-  display:block;
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px;
   color: #e0e5eb;
   background-color: #ec6f6f;
   border: 0px;
@@ -49,6 +69,7 @@ p.danger {
   line-height: 1.8;
   font-family: 'Open Sans',sans-serif;
   width: 300px;
+  margin-left: 100px;
 }
 .botonSubmit:hover{
   background-color: #111111
@@ -64,21 +85,28 @@ p.danger {
   font-weight: 600;
   line-height: 1.8;
   font-family: 'Open Sans',sans-serif;
-  bottom: 250px;
+  margin-top: 700px;
   width: 300px;
-  margin-top: 50px;
+
 
 }
 .homeBoton:hover{
   background-color: #111111
 }
 
-label{
-  display: block;
-}
+
 
 .contenedorInput{
-  margin: 20px;
+  margin-top: 20px;
+}
+.contenedorTempsSelected{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  justify-items: center;
+  margin-bottom: 50px;
 }
 #botonTemp{
   display:inline-flex;

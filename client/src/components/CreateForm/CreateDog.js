@@ -182,13 +182,16 @@ function CreateDog (props){
         <input id='botonTemp' type="button" value="+" onClick={AddOption} />
     </div>
     
+    <div className='contenedorTempsSelected'>
     {datosForm.temperamentos?.map(e=>
     <button className="tempSeleccionado" onClick={borrarTemp} value={e} key={e}>{e}</button>
      )}
+    </div>
+   
     
-    
+      <input className='botonSubmit' type="submit" value= "Create" disabled={Object.keys(error).length === 0? false : true}/>
 
-    <input className='botonSubmit' type="submit" value= "Create" disabled={Object.keys(error).length === 0? false : true}/>
+    
 
     </form>
 
