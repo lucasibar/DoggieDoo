@@ -170,7 +170,7 @@ function CreateDog (props){
             name='temperamentos' 
             onChange={handleTempsOnChange}
             /> 
-        <button onClick={botonNewTemp}>+</button>
+        <button id='botonTemp' onClick={botonNewTemp}>+</button>
         <hr/>
     </div>
     <div className='contenedorInput'>

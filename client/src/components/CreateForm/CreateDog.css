@@ -110,6 +110,7 @@ p.danger {
 }
 #botonTemp{
   display:inline-flex;
+  background-color: #ffe1eb;
   border: none;
   width: 21px;
   height: 21px;
