@@ -17,15 +17,14 @@ class Detail extends React.Component {
             <img src='https://www.petdepotstorecr.com/images/pawsDog.gif' alt='LOADDING'/>:
             <div className="detalle">
 
-
-                <Link to="/inicio">HOME</Link> 
+                <h1 className='tituloDetalle'>{name}</h1>  
                 <img className='imagenCarta' src={img} alt='No se encontro imagen'/>
-                <h1>{name}</h1>  
-                <h2>{temperament}</h2>  
-                <h2>Altura: {height}</h2>
-                <hr/>
-                <h2>Peso: {weight}</h2> 
-                <h2>Estimado de vida: {life_span}</h2>
+                <h2 className='subtituloDetalle'>{temperament}</h2>
+                <h2 className='parrrafoDetalle'>Altura: {height}</h2>
+                <h2 className='parrrafoDetalle'>Peso: {weight}</h2> 
+                <h2 className='parrrafoDetalle'>Estimado de vida: {life_span}</h2>
+                <Link to="/inicio" className='homeBotonDetalle'>Home</Link> 
+              
             </div>}
             
     

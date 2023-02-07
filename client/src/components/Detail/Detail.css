@@ -1,40 +1,85 @@
-.generalDetail{
-  display: flex;
+/* .generalDetail{   
+   display: block;
   flex-wrap: wrap;
   align-items: space-between;
   justify-content: center;
+} */
+
+.detalle{
+  display: block;
+  width: 600px;
+  height: 800px;
+  color: #ec6f6f;
+  font-weight: bolder;
+  font-size: medium;
+  background-color: #ffe1eb;
+  border-radius:10%;
+  border: solid;
+  border-width: 2px;
+
 }
 .imagenCarta{
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+    width: 500px;
     height: 300px;
-    border-radius: 5%;
-    left: 10%;
+    border-radius: 10%;
 }
-.imagenHome{
-    display: flex;
-    position:absolute;
-    height: 100px;
-    width: 100px;
-    left:15%;
-  }
-  .imagenHome:hover{
-    transform: scale(1.2);
-  }
-.detalle{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 800px;
-    color: #3E7C17;
-    font-weight: bolder;
-    font-size: medium;
-    background-color: #E8E1D9;
-    border-radius:10%;
-    text-align: center;
-    text-justify: auto;
-    border: solid;
-    border-width: 2px;
-    margin: 10px;
+.contenedorimagen{
+  display: flex;
+  width: 100%;
+}
 
+
+.subtituloDetalle{
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ec6f6f;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+.tituloDetalle{
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  color: #111;
+  margin-top: 30px;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.parrrafoDetalle{
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  font-size: 1.25rem;
+  color: #111;
+  font-weight: 600;
+  font-family: 'Open Sans',sans-serif;
+  text-align: left;
+  width: 300px;
+}
+
+
+.homeBotonDetalle{
+  display: flex;
+  position: relative;
+  margin-left: 150px;
+  color: #e0e5eb;
+  text-decoration: none;
+  background-color: #ec6f6f;
+  border: 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: 'Open Sans',sans-serif;
+  width: 300px;
+  justify-content: center;
+}
+.homeBotonDetalle:hover{
+  background-color: #111111
 }
