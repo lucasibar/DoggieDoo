@@ -3,11 +3,11 @@
   margin-top: 50px;
   background-color: #ffe1eb;
   width: 100%;
-  text-align: center;
-  text-justify: center;
+  /* text-align: center; */
+  /* text-justify: center; */
   height: 50px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .buttonFiltros{
   color: #111;
@@ -73,10 +73,32 @@ border-color: #ffaec9;
 }
 .huella{
   display: block;
-margin: 80px;
+  margin: 80px;
   background-color: white;
   height: 150px;
   width: 150px;
   border-radius: 100%;
   box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
+}
+
+@media (max-width: 1150px){
+  .huella{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+  }
+  .div1{
+    display: block;
+  }
+  .div2{
+    display: block;
+  }
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
 }

@@ -24,20 +24,20 @@ function Nav ({ordenadoAZ, ordenadoMayMen}){
 
 return (
 <div  className='nav'>
-
-    <button className='buttonFiltros' onClick={()=>dispatch(clearFiltros())}>Home</button>
-    <button className='buttonFiltros' onClick={()=>dispatch(pesoMayMen())}>{ordenadoMayMen||"MENOR-MAYOR"}</button>
-    <button className='buttonFiltros' onClick={()=>dispatch(nombreAZ())}>{ordenadoAZ}</button>
+    <div className='div1'>
+        <button className='buttonFiltros' onClick={()=>dispatch(clearFiltros())}>Home</button>
+        <button className='buttonFiltros' onClick={()=>dispatch(pesoMayMen())}>{ordenadoMayMen||"MENOR-MAYOR"}</button>
+        <button className='buttonFiltros' onClick={()=>dispatch(nombreAZ())}>{ordenadoAZ}</button>
+    </div>
     <img className='huella' src={huella} alt='no se cargo la huella'/>
-    <button className='buttonFiltros' onClick={()=>dispatch(dogsApi())}>DogsApi</button>
-    <button className='buttonFiltros' onClick={()=>dispatch(dogsBDD())}>DogsBdd</button>
-    
-    <input className= 'inputSearch' type="text" value={busqueda} placeholder="Search" onChange={handleOnChange} /> 
-    <button className='botonSearch' onClick={botonBusqueda}></button> 
+    <div className='div2'>
+        <button className='buttonFiltros' onClick={()=>dispatch(dogsApi())}>DogsApi</button>
+        <button className='buttonFiltros' onClick={()=>dispatch(dogsBDD())}>DogsBdd</button>
+        <input className= 'inputSearch' type="text" value={busqueda} placeholder="Search" onChange={handleOnChange} /> 
+        <button className='botonSearch' onClick={botonBusqueda}></button>
+    </div>
 
-    
     <NavLink className='create' to='/create'>+</NavLink>
-
 </div>
 )
 }

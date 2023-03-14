@@ -12,9 +12,10 @@
   text-justify: left;
   border: solid;
   border-width: 2px;
-
+  margin-left: 40px;
 }
 input{
+  justify-content: center;
   background-color: #ffe1eb;
   font-size: 1rem;
   color: #111;
@@ -25,6 +26,8 @@ select{
 }
 label{
   display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p.danger {
@@ -94,10 +97,13 @@ p.danger {
   background-color: #111111
 }
 
-
-
 .contenedorInput{
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+
+
 }
 .contenedorTempsSelected{
   display: flex;
@@ -118,4 +124,26 @@ p.danger {
   font-weight: 600;
   line-height: 1.8;
   font-family: 'Open Sans',sans-serif;
+}
+
+  
+@media (max-width: 768px){
+  .form{
+    border: none;
+  }
+}
+
+@media (max-width: 420px){
+
+    .contenedorInput{
+      margin-left: 50px;
+      width: 80%;
+    }
+    .botonSubmit{
+    width: 200px;
+    margin-left: 150px;
+    }
+    .homeBoton{
+    width: 200px;
+    }
 }

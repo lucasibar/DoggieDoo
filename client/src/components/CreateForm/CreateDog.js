@@ -51,9 +51,6 @@ function CreateDog (props){
 
     }
 
-
-    
-
     function handleTempSeleccion(e) {
       setSelectedOption(Array.from(e.target.selectedOptions, option => option.value));
 
@@ -63,12 +60,11 @@ function CreateDog (props){
         if(datosForm.temperamentos.includes(...selectedOption)){
             alert('Esta opcion ya fue seleccionada')
         }else{
-                   setDatosForm(prevState=>({
-        ...prevState,
-        temperamentos: [...datosForm.temperamentos, ...selectedOption]
+            setDatosForm(prevState=>({
+                ...prevState,
+                temperamentos: [...datosForm.temperamentos, ...selectedOption]
         })) 
         }
-
     }
 
     const handleSubmit = async (e) => {
@@ -91,8 +87,9 @@ function CreateDog (props){
 <div className='form'>
     
     <form onSubmit={handleSubmit}>
+    <label>Raza</label>
     <div className='contenedorInput'>
-        <label>Raza</label>
+        
         <input 
         type="text" 
         placeholder= "Nombre de la raza"
@@ -102,10 +99,12 @@ function CreateDog (props){
         onBlur={handleOnBlur}/> 
         <p style={{visibility: error.name? "visible" : "hidden"}} className="danger">{error.name}</p>
     </div>
-<hr/>
+
+    <label>Altura</label>
     <div className='contenedorInput'>
-        <label>Altura</label>
+        
         <input 
+        id='max'
         type="text" 
         placeholder="Altura maxima"
         value={datosForm.heightMAX} 
@@ -125,10 +124,11 @@ function CreateDog (props){
         <p style={{visibility: error.heightMIN? "visible" : "hidden"}} className="danger" >{error.heightMIN}</p>
 
     </div>
-<hr/>
-    <div className='contenedorInput'>
-        <label>Peso</label>
+
+    <label>Peso</label>
+    <div className='contenedorInput'> 
         <input 
+        id='max'
         type="text" 
         placeholder="Peso maxima"
         value={datosForm.weightMAX} 
@@ -147,9 +147,10 @@ function CreateDog (props){
         <p style={{visibility: error.weightMAX? "visible" : "hidden"}} className="danger" >{error.weightMAX}</p>     
         <p style={{visibility: error.weightMIN? "visible" : "hidden"}} className="danger" >{error.weightMIN}</p>     
     </div>
-<hr/>
+
+    <label>Estimado de vida</label>
     <div className='contenedorInput'>
-        <label>Estimado de vida</label>
+        
         <input 
         type="text" 
         placeholder="Estimado de vida maxima"
@@ -160,21 +161,21 @@ function CreateDog (props){
 
         <p style={{visibility: error.life_span? "visible" : "hidden"}} className="danger">{error.life_spanMIN}</p>      
     </div>
-<hr/>
-    <div className='contenedorInput'>
-        <label>Crear temperamento</label>
+
+    <label>Crear temperamento</label>
+    <div className='contenedorInput'> 
         <input 
             type="text" 
             placeholder="Nuevo temperamento"
             value={newTemperamentos} 
             name='temperamentos' 
             onChange={handleTempsOnChange}
-            /> 
+        /> 
         <button id='botonTemp' onClick={botonNewTemp}>+</button>
-        <hr/>
     </div>
+
+    <label>Temperamentos</label>
     <div className='contenedorInput'>
-        <label>Temperamentos</label>
         <select onChange={handleTempSeleccion}>
         <option >Selecione opcion...</option>
             {temperamentos?.map(t=>(<option value={t} key={t}>{t}</option>))}

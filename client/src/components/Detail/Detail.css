@@ -1,10 +1,3 @@
-/* .generalDetail{   
-   display: block;
-  flex-wrap: wrap;
-  align-items: space-between;
-  justify-content: center;
-} */
-
 .detalle{
   display: block;
   width: 600px;
@@ -16,7 +9,6 @@
   border-radius:10%;
   border: solid;
   border-width: 2px;
-
 }
 .imagenCarta{
     display: flex;
@@ -30,8 +22,6 @@
   display: flex;
   width: 100%;
 }
-
-
 .subtituloDetalle{
   display: flex;
   position: relative;
@@ -63,8 +53,6 @@
   text-align: left;
   width: 300px;
 }
-
-
 .homeBotonDetalle{
   display: flex;
   position: relative;
@@ -82,4 +70,60 @@
 }
 .homeBotonDetalle:hover{
   background-color: #111111
+}
+
+
+  
+@media (max-width: 768px){
+  .detalle{
+    border: none;
+  }
+}
+@media (max-width: 550px){
+  .imagenCarta{
+    margin-left: 160px;
+    width: 300px;
+    height: 200px;
+}
+.subtituloDetalle{
+  margin-left: 160px;}
+.tituloDetalle{
+  margin-left: 160px;}
+.parrrafoDetalle{
+  margin-left: 160px;}
+}
+
+@media (max-width: 420px){
+  .imagenCarta{
+    margin-left: 160px;
+  }
+  .subtituloDetalle{
+    margin-left: 160px;
+    font-weight: 200;
+    font-style: italic;
+    color: #ec6f6f;
+    font-size: 1rem;
+    line-height: 1.1;
+    margin-top: 20px;
+  }
+  .tituloDetalle{
+    margin-left: 160px;
+    color: #111;
+    margin-top: 30px;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+  .parrrafoDetalle{
+    margin-left: 160px;
+    font-size: 1rem;
+    color: #111;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+    text-align: left;
+    width: 200px;
+  }
+  .homeBotonDetalle{
+    width: 200px;
+    margin-left: 160px;
+  }
 }

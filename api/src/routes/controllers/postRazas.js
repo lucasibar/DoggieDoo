@@ -1,4 +1,4 @@
-const { Raza, Temperamento} = require("../../db");
+const { Raza, Temperamento} = require ("../../db");
 
 
 module.exports = { 
